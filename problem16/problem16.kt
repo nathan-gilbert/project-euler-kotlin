@@ -10,9 +10,11 @@ public fun main(args: Array<String>) {
 
     //convert result to stringa
     val resultStr = result.toInt().toString()
+    println(resultStr)
     var sum = 0
     for (ch in resultStr) {
-        sum += ch.toInt()
+        //have to convert chars to string before going to int
+        sum += ch.toString().toInt()
     }
-    println("The sum is $sum")
+    println("The sum: $sum")
 }
