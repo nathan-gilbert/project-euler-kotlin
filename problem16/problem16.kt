@@ -4,12 +4,13 @@ What is the sum of the digits of the number 2^1000?
 */
 public fun main(args: Array<String>) {
     val base = 2
-    val exp = 15
+    //val exp = 15
+    val exp = 1000
     val result = Math.pow(base.toDouble(), exp.toDouble())
     println("$base^$exp = $result")
 
     //convert result to stringa
-    val resultStr = result.toInt().toString()
+    val resultStr = result.toLong().toString()
     println(resultStr)
     var sum = 0
     for (ch in resultStr) {
